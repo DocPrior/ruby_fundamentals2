@@ -10,6 +10,8 @@ def grocery_add(arr, new_item)
   arr.push(new_item)
 end
 
-grocery_add(grocery_list, "rice")
+grocery_list_new = grocery_add(grocery_list, "rice")
 
-grocery_list_list(grocery_list)
+grocery_list_list(grocery_list_new)
+
+puts grocery_list_new.count
