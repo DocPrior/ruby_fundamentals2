@@ -15,3 +15,9 @@ grocery_list_new = grocery_add(grocery_list, "rice")
 grocery_list_list(grocery_list_new)
 
 puts grocery_list_new.count
+
+if grocery_list_new.include?("bananas")
+    puts "You need to pick up bananas."
+  else
+    puts "You don't need bananas today."
+end
