@@ -16,8 +16,13 @@ students[:cohort4] = 43
 
 puts students.keys
 
-students.each_value do |value|
-  percent = value.to_i * 0.05
-  incerease = value + percent
-  puts incerease.to_i
+students.each do |key, value|
+   percent = (value * 0.05) + value
+   students[key] = percent.to_i
 end
+
+display(students)
+
+students.delete(:cohort2)
+
+display(students)
