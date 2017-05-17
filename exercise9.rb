@@ -21,3 +21,5 @@ if grocery_list_new.include?("bananas")
   else
     puts "You don't need bananas today."
 end
+
+puts grocery_list_new[1]
