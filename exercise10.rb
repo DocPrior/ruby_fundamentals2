@@ -34,6 +34,25 @@ students.each do |key, value|
 end
 puts total
 
+staff = {
+  :staff1 => 4,
+  :staff2 => 5,
+  :staff3 => 3
+}
+
+#call orgiginal method
+display(staff)
+
+def display_2(hash)
+  hash.each do |key, value|
+    puts "#{key}: #{value} staff"
+  end
+end
+
+display_2(staff)
+#to fix puts statement
+
+
 # students_reduced = students.reduce(0) do |total, cohort|
 #   total + cohort.last
 # end
