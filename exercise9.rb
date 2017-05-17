@@ -27,3 +27,7 @@ puts grocery_list_new[1]
 grocery_list_new = grocery_list_new.sort
 
 grocery_list_list(grocery_list_new)
+
+grocery_list_new.delete("salmon")
+
+grocery_list_list(grocery_list_new)
