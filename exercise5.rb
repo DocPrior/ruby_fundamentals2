@@ -1,6 +1,6 @@
 def greet_backwards(name)
   backward = name.reverse
-  return "Hello, #{backward}#{backward}! Welcome home."
+  "Hello, #{backward}#{backward}! Welcome home."
 end
 
 puts greet_backwards('Sara')
